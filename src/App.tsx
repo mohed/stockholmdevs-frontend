@@ -1,12 +1,27 @@
-import "./App.css";
-import { Header } from "./Header";
+import { Container, ThemeProvider } from "@mui/material";
 
-function App() {
+import { theme } from "./globalStyle";
+import { LandingPage } from "./LandingPage";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-     <Header />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container
+        sx={{
+          background: theme.palette.background.default,
+          color: "white",
+          minHeight: "100vh",
+          minWidth: "100vw",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <LandingPage />
+      </Container>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
         </svg>
       </div>
       <p>
-        Edit <code>src/App.tsx</code> and save to reload.
+        Edit <code>Alex the man </code> and save to reload.
       </p>
       <a
         className="App-link"
